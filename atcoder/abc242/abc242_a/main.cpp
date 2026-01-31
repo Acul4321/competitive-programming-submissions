@@ -99,12 +99,21 @@ struct dsu {
 int main() {
     cout << fixed << setprecision(11);//allows large decimal numbers
     //input code
-
+    ll A, B, C, X;
+    cin >> A >> B >> C >> X;
     //functions
 
     auto solve = [&]()->void{
         //solve code
-
+        if (X <= A) {
+            cout << 1;
+        } 
+        else if(X >= A+1 && X <= B) {
+            cout << (ld)C / (B - A);
+        } 
+        else {
+            cout << 0;
+        }
 
         return;
     };

@@ -98,6 +98,8 @@ struct dsu {
 
 int main() {
     cout << fixed << setprecision(11);//allows large decimal numbers
+    ios::sync_with_stdio(false); //disables the synchronization between the C and C++ standard streams
+    cin.tie(nullptr); //This unties cin from cout not ensures that one stream is flushed automatically before each I/O operation on the other stream.
     //input code
 
     //functions
